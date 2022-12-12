@@ -1,0 +1,75 @@
+Correction exo : 
+Html : 
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/css/style.css">
+  <title>Document</title>
+</head>
+
+<body class="d-flex align-items-center">
+  <div class="container ">
+    <div class="row gap-4 align-items-end">
+      <div class="col-4 bg-navy p-5 rounded-bottom rounded-start rounded-circle">
+        <img src="./public/img/logo.svg" alt="" class="w-50">
+        <div class="d-flex gap-3 pt-5">
+          <div class="icon bg-darknavy p-3 rounded rounded-3">
+            <img src="./public/img/icon-document.svg" alt="">
+          </div>
+          <div class="icon bg-darknavy p-3 rounded rounded-3">
+            <img src="./public/img/icon-folder.svg" alt="">
+          </div>
+          <div class="icon bg-darknavy p-3 rounded rounded-3">
+            <img src="./public/img/icon-upload.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-7 bg-navy p-5 rounded-3 position-relative">
+        <div class="popup bg-white w-25 position-absolute px-4 py-3 rounded">
+          <span class="fs-1 text-dark fw-bold">185 </span><span class="text-muted text-uppercase fw-semibold">gb left</span>
+        </div>
+        <p class="text-white">You've used <b class="fw-bolder">815GB</b> of your storage</p>
+        <div class="progress mb-2">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
+        <div class="row text-white">
+          <div class="col-6">
+            <span>0 <b>Gb</b></span>
+          </div>
+          <div class="col-6 text-end">
+            <span>1000 <b>GB</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Script JS Bootstrap -->
+  <script src='./node_modules/bootstrap/dist/js/bootstrap.bundle.js'></script>
+</body>
+
+</html>
+```
+Sass _style.sass
+```css
+body
+    background-color: #0c122c
+    background-image: url(../../public/img/bg-desktop.png)
+    background-size: contain
+    background-attachment: fixed
+    background-position: bottom
+    background-repeat: no-repeat
+    height: 100vh
+    font-family: "Raleway"
+    .popup
+        top: -50px
+        right: 50px
+    .progress-bar
+        background: linear-gradient(to right, #ff9e95, #fb4d92)!important
+```
